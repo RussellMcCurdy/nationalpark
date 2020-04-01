@@ -2,7 +2,7 @@
 
 
 const apiKey = 'GpwiEoXbWPyMJreecbw2PYC456cNgk972ippkBgd'; 
-const baseURL = 'http://developer.nps.gov/api/v1/places';
+const baseURL = 'https://developer.nps.gov/api/v1/places';
 
 
 function formatQueryParams(params) {
