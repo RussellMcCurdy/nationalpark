@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Github App</title>
+</head>
+    <body>
+        <div class="container">
+            <h1>National Park Finder</h1>
+    
+            <form id="js-form">
+                <label for="search-term">Which state? (Use 2 letter state code) 
+                    (For more than one state separate codes by a comma)</label><br>
+                <input type="text" name="search-term" id="state" placeholder="OK,AL">
+                <div>
+                    <label for="max-results">Maximum results to return</label><br>
+                    <input type="number" name="max-results" id="js-max-results" value="10">
+                </div>
+                <div>
+                    <input type="submit" value="Search" id="submit">
+                </div>
+                
+            </form>
+    
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
+              <h2>Search results</h2>
+              <ul id="results-list">
+              </ul>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="javascript-main.js"></script>
+</body>
+</html>
